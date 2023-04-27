@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="noindex" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aang-Portfolio</title>
+    <link href="/assets/anggih.jpg" rel="shortcut icon" type="image/x-icon" />
+    <link
+      href="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c10e6c60bac_RevoU%20centered.svg"
+      rel="apple-touch-icon"
+    />
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body onload="loadLibrary()">
+    <div class="flex flex-col h-screen">
+      <header>
+        <nav class="bg-gray-900">
+          <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center sm:hidden"
+              >
+                <button
+                  id="m-menu-button"
+                  type="button"
+                  class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
+                  onclick="toggleMobileMenu()"
+                >
+                  <span class="sr-only">Open main menu</span>
+                  <svg
+                    class="block h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                  <svg
+                    class="hidden h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center"
+              >
+                <div class="hidden sm:block">
+                  <div class="flex space-x-4">
+                    <a
+                      href=""
+                      class="text-white hover:bg-blue-700 rounded-md px-3 py-2 text-lg font-medium"
+                      >Home</a
+                    >
+                    <a
+                      href="#about"
+                      class="text-white hover:bg-blue-700 rounded-md px-3 py-2 text-lg font-medium"
+                      >About</a
+                    >
+                  </div>
+                </div>
+                <div class="flex flex-shrink-0 sm:ml-6 items-center">
+                  <img
+                    href=""
+                    class="block h-8 w-auto lg:hidden"
+                    src="/assets/logoport2.png"
+                    alt="RevoU Library"
+                  />
+                  <img
+                    href=""
+                    class="hidden h-8 w-auto lg:block"
+                    src="/assets/logoport2.png"
+                    alt="RevoU Library"
+                  />
+                </div>
+                <div class="hidden sm:ml-6 sm:block">
+                  <div class="flex space-x-4">
+                    <a
+                      href="#contact"
+                      class="text-white hover:bg-blue-700 rounded-md px-3 py-2 text-lg font-medium"
+                      >Contact</a
+                    >
+                    <a
+                      href="#experience"
+                      class="text-white hover:bg-blue-700 rounded-md px-3 py-2 text-lg font-medium"
+                      >Experience</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sm:hidden hidden" id="m-menu">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+              <a
+                href=""
+                class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                aria-current="page"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="text-gray-300 hover:bg-blue-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >About</a
+              >
+              <a
+                href="#contact"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >Contact</a
+              >
+              <a
+                href="#experience"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >Experience</a
+              >
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main
+        class="flex-1 overflow-y-auto bg-portfolio-3 bg-cover bg-center bg-no-repeat"
+      >
+        <div class="hidden sm:block">
+          <div class="flex flex-col items-center py-3 px-4 sm:px-8">
+            <div
+              class="container mx-auto my-12 max-w-screen-md px-4 py-8 sm:px-6 lg:px-8 bg-gray-900 rounded-lg"
+            >
+              <h3 class="text-white text-center mb-4 text-3xl"
+                >Hello, I am <b>Anggih Pratama!</b></h3
+              >
+              <h4 class="text-white text-center mb-4 text-xl"
+                >Welcome to my portfolio website</h4
+              >
+            </div>
+          </div>
+        </div>
+        <div class="sm:hidden" id="m-home">
+          <div class="flex flex-col items-center py-3 px-4 sm:px-8">
+            <div
+              class="container mx-auto my-8 max-w-screen-md px-4 py-8 sm:px-6 lg:px-8 bg-gray-900 rounded-lg"
+            >
+              <h3 class="text-white text-center mb-4 text-xl"
+                >Hello, I am Anggih Pratama!</h3
+              >
+              <h4 class="text-white text-center mb-4"
+                >Welcome to my portfolio website</h4
+              >
+            </div>
+          </div>
+        </div>
+
+        <a name="about">
+          <section class="about mb-6">
+            <div class="flex flex-col items-center py-3 px-4 sm:px-8">
+              <div
+                class="container mx-auto my-3 max-w-screen-md px-4 py-8 sm:px-6 lg:px-8 bg-gray-900 rounded-lg"
+              >
+                <div class="flex justify-center w-full mb-4">
+                  <img class="rounded-md" src="/assets/anggih.jpg" />
+                </div>
+                <div class="text-white">
+                  <p class="mb-4"
+                    >I am a person who has good analytical thinking. I am able
+                    to quickly adapt to new environments. A person who is fast
+                    in learning and practicing. I have more than 3 years of work
+                    experience and ready to continue to develop myself and the
+                    company. I have good oral or written skills in English.</p
+                  >
+                  <p
+                    >I have been learning to be Software Engineer by joining
+                    RevoU Full Stack Software Engineer 2023 program. I want to
+                    change the path of my career so that I can be part of the
+                    future industry. In order to answer the demand of the
+                    future, I have been learning and practicing with patience
+                    and passion.</p
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </a>
+        <a name="contact">
+          <section class="contact mb-6">
+            <div class="flex flex-col items-center py-3 px-4 sm:px-8">
+              <div
+                class="container mx-auto my-3 max-w-screen-md px-4 py-8 sm:px-6 lg:px-8 bg-gray-900 rounded-lg"
+              >
+                <div class="text-white">
+                  <h2 class="text-xl font-semibold text-center mb-6 text-white"
+                    >My Personal Contact</h2
+                  >
+                  <p class="mb-4"
+                    >Address:
+                    <b
+                      >Manggis Street No. 94 RT 16 RW 04 Syamsuddin Noor,
+                      Landasan Ulin, Banjarbaru City, South Borneo, Indonesia</b
+                    ></p
+                  >
+                  <p class="mb-4">Email: <b>anggih10@gmail.com</b></p>
+                  <p>Phone: <b>+62 812 5630 6072</b></p>
+                </div>
+                <div class="p-6 flex items-center justify-center">
+                  <div class="container">
+                    <h2
+                      class="text-lg font-semibold text-center mb-6 text-white"
+                      ><u>Please click the button below to find me !</u></h2
+                    >
+
+                    <div class="flex flex-wrap justify-center gap-2">
+                      <button
+                        class="bg-blue-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+                        onclick="location.href='https://drive.google.com/file/d/1JDs8XbTT_KQADb-yTomEUh4oWn14qzTe/view?usp=sharing'"
+                      >
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          role="img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px"
+                          y="0px"
+                          width="45.057px"
+                          height="45.057px"
+                          viewBox="0 0 45.057 45.057"
+                          style="enable-background: new 0 0 45.057 45.057"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <g id="_x35_8_24_">
+                              <g>
+                                <path
+                                  d="M19.558,25.389c-0.067,0.176-0.155,0.328-0.264,0.455c-0.108,0.129-0.24,0.229-0.396,0.301
+				c-0.156,0.072-0.347,0.107-0.57,0.107c-0.313,0-0.572-0.068-0.78-0.203c-0.208-0.137-0.374-0.316-0.498-0.541
+				c-0.124-0.223-0.214-0.477-0.27-0.756c-0.057-0.279-0.084-0.564-0.084-0.852c0-0.289,0.027-0.572,0.084-0.853
+				c0.056-0.281,0.146-0.533,0.27-0.756c0.124-0.225,0.29-0.404,0.498-0.541c0.208-0.137,0.468-0.203,0.78-0.203
+				c0.271,0,0.494,0.051,0.666,0.154c0.172,0.105,0.31,0.225,0.414,0.361c0.104,0.137,0.176,0.273,0.216,0.414
+				c0.04,0.139,0.068,0.25,0.084,0.33h2.568c-0.112-1.08-0.49-1.914-1.135-2.502c-0.644-0.588-1.558-0.887-2.741-0.895
+				c-0.664,0-1.263,0.107-1.794,0.324c-0.532,0.215-0.988,0.52-1.368,0.912c-0.38,0.392-0.672,0.863-0.876,1.416
+				c-0.204,0.551-0.307,1.165-0.307,1.836c0,0.631,0.097,1.223,0.288,1.77c0.192,0.549,0.475,1.021,0.847,1.422
+				s0.825,0.717,1.361,0.949c0.536,0.23,1.152,0.348,1.849,0.348c0.624,0,1.18-0.105,1.668-0.312
+				c0.487-0.209,0.897-0.482,1.229-0.822s0.584-0.723,0.756-1.146c0.172-0.422,0.259-0.852,0.259-1.283h-2.593
+				C19.68,25.023,19.627,25.214,19.558,25.389z"
+                                />
+                                <polygon
+                                  points="26.62,24.812 26.596,24.812 25.192,19.616 22.528,19.616 25.084,28.184 28.036,28.184 30.713,19.616 28,19.616 
+							"
+                                />
+                                <path
+                                  d="M33.431,0H5.179v45.057h34.699V6.251L33.431,0z M36.878,42.056H8.179V3h23.706v4.76h4.992L36.878,42.056L36.878,42.056z"
+                                />
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                      <button
+                        class="bg-red-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+                        onclick="location.href='https://www.instagram.com/aanggihpratama/'"
+                      >
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m16 12v-.001c0-2.209-1.791-4-4-4s-4 1.791-4 4 1.791 4 4 4c1.104 0 2.104-.448 2.828-1.171.723-.701 1.172-1.682 1.172-2.768 0-.021 0-.042-.001-.063v.003zm2.16 0c-.012 3.379-2.754 6.114-6.135 6.114-3.388 0-6.135-2.747-6.135-6.135s2.747-6.135 6.135-6.135c1.694 0 3.228.687 4.338 1.797 1.109 1.08 1.798 2.587 1.798 4.256 0 .036 0 .073-.001.109v-.005zm1.687-6.406v.002c0 .795-.645 1.44-1.44 1.44s-1.44-.645-1.44-1.44.645-1.44 1.44-1.44c.398 0 .758.161 1.018.422.256.251.415.601.415.988v.029-.001zm-7.84-3.44-1.195-.008q-1.086-.008-1.649 0t-1.508.047c-.585.02-1.14.078-1.683.17l.073-.01c-.425.07-.802.17-1.163.303l.043-.014c-1.044.425-1.857 1.237-2.272 2.254l-.01.027c-.119.318-.219.695-.284 1.083l-.005.037c-.082.469-.14 1.024-.159 1.589l-.001.021q-.039.946-.047 1.508t0 1.649.008 1.195-.008 1.195 0 1.649.047 1.508c.02.585.078 1.14.17 1.683l-.01-.073c.07.425.17.802.303 1.163l-.014-.043c.425 1.044 1.237 1.857 2.254 2.272l.027.01c.318.119.695.219 1.083.284l.037.005c.469.082 1.024.14 1.588.159l.021.001q.946.039 1.508.047t1.649 0l1.188-.024 1.195.008q1.086.008 1.649 0t1.508-.047c.585-.02 1.14-.078 1.683-.17l-.073.01c.425-.07.802-.17 1.163-.303l-.043.014c1.044-.425 1.857-1.237 2.272-2.254l.01-.027c.119-.318.219-.695.284-1.083l.005-.037c.082-.469.14-1.024.159-1.588l.001-.021q.039-.946.047-1.508t0-1.649-.008-1.195.008-1.195 0-1.649-.047-1.508c-.02-.585-.078-1.14-.17-1.683l.01.073c-.07-.425-.17-.802-.303-1.163l.014.043c-.425-1.044-1.237-1.857-2.254-2.272l-.027-.01c-.318-.119-.695-.219-1.083-.284l-.037-.005c-.469-.082-1.024-.14-1.588-.159l-.021-.001q-.946-.039-1.508-.047t-1.649 0zm11.993 9.846q0 3.578-.08 4.953c.005.101.009.219.009.337 0 3.667-2.973 6.64-6.64 6.64-.119 0-.237-.003-.354-.009l.016.001q-1.375.08-4.953.08t-4.953-.08c-.101.005-.219.009-.337.009-3.667 0-6.64-2.973-6.64-6.64 0-.119.003-.237.009-.354l-.001.016q-.08-1.375-.08-4.953t.08-4.953c-.005-.101-.009-.219-.009-.337 0-3.667 2.973-6.64 6.64-6.64.119 0 .237.003.354.009l-.016-.001q1.375-.08 4.953-.08t4.953.08c.101-.005.219-.009.337-.009 3.667 0 6.64 2.973 6.64 6.64 0 .119-.003.237-.009.354l.001-.016q.08 1.374.08 4.953z"
+                          />
+                        </svg>
+                      </button>
+
+                      <button
+                        class="bg-green-200 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+                        onclick="location.href='https://wa.me/6281256306072'"
+                      >
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          role="img"
+                          width="800px"
+                          height="800px"
+                          viewBox="0 0 16 16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"
+                          />
+                          <path
+                            d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"
+                          />
+                        </svg>
+                      </button>
+
+                      <button
+                        class="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+                        onclick="location.href='https://www.linkedin.com/in/anggih-pratama-3ab23b142/'"
+                      >
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          role="img"
+                          viewBox="0 0 256 256"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g>
+                            <path
+                              d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055"
+                            ></path>
+                          </g>
+                        </svg>
+                      </button>
+
+                      <button
+                        class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+                        onclick="location.href='https://github.com/AnggihP'"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          aria-hidden="true"
+                          role="img"
+                          class="w-5"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 24 24"
+                        >
+                          <g fill="none">
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                              fill="currentColor"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+
+                      <button
+                        class="bg-red-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+                        onclick="location.href='mailto:anggih10@gmail.com'"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          aria-hidden="true"
+                          role="img"
+                          class="w-5"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 24 24"
+                        >
+                          <g fill="none">
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12c6.627 0 12-5.373 12-12S18.627 0 12 0zm.14 19.018c-3.868 0-7-3.14-7-7.018c0-3.878 3.132-7.018 7-7.018c1.89 0 3.47.697 4.682 1.829l-1.974 1.978v-.004c-.735-.702-1.667-1.062-2.708-1.062c-2.31 0-4.187 1.956-4.187 4.273c0 2.315 1.877 4.277 4.187 4.277c2.096 0 3.522-1.202 3.816-2.852H12.14v-2.737h6.585c.088.47.135.96.135 1.474c0 4.01-2.677 6.86-6.72 6.86z"
+                              fill="currentColor"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </a>
+
+        <a name="experience">
+          <section class="experience mb-6">
+            <div
+              class="container mx-auto my-3 max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 bg-gray-900 rounded-lg"
+            >
+              <div class="text-center mb-4">
+                <b class="text-xl text text-white"
+                  >Software Development Experience
+                </b>
+              </div>
+              <div class="relative overflow-y-auto">
+                <table class="border table-auto text-white w-full text-sm">
+                  <thead>
+                    <tr class="bg-blue-700 text-lg">
+                      <th class="border px-2 py-2">Project Name</th>
+                      <th class="border px-2 py-2">Company / Course</th>
+                      <th class="border px-2 py-2">Components</th>
+                      <th class="border px-2 py-2">Year</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-center">
+                    <tr>
+                      <td class="border px-2 py-2"
+                        ><a
+                          href="https://github.com/AnggihP/w11-the-movie-AnggihP"
+                        >
+                          Movie Watchlist Site
+                        </a>
+                      </td>
+                      <td class="border px-2 py-2">RevoU</td>
+                      <td class="border px-2 py-2"
+                        >HTML, Tailwind CSS, Javascript, RestAPI, Typescript</td
+                      >
+                      <td class="border px-2 py-2">2023</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-2 py-2"
+                        ><a
+                          href="https://github.com/AnggihP/w10-my-web-api-AnggihP"
+                        >
+                          MockAPI CRUD using Local Storage
+                        </a>
+                      </td>
+                      <td class="border px-2 py-2">RevoU</td>
+                      <td class="border px-2 py-2"
+                        >HTML, Tailwind CSS, Javascript, RestAPI</td
+                      >
+                      <td class="border px-2 py-2">2023</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-2 py-2"
+                        ><a
+                          href="https://github.com/AnggihP/w9-library-tailwind-AnggihP"
+                        >
+                          Library Tailwind
+                        </a>
+                      </td>
+                      <td class="border px-2 py-2">RevoU</td>
+                      <td class="border px-2 py-2"
+                        >HTML,Tailwind CSS, Javascript, Dockerfile</td
+                      >
+                      <td class="border px-2 py-2">2023</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-2 py-2"
+                        ><a
+                          href="https://github.com/AnggihP/w7-developer-survey-cli-AnggihP"
+                        >
+                          Developer Survey CLI
+                        </a>
+                      </td>
+                      <td class="border px-2 py-2">RevoU</td>
+                      <td class="border px-2 py-2">Javascript</td>
+                      <td class="border px-2 py-2">2023</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-2 py-2"
+                        ><a
+                          href="https://github.com/AnggihP/w6-e-commerce-design-AnggihP"
+                        >
+                          E-Commerce Design
+                        </a>
+                      </td>
+                      <td class="border px-2 py-2">RevoU</td>
+                      <td class="border px-2 py-2">HTML</td>
+                      <td class="border px-2 py-2">2023</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-2 py-2"
+                        ><a
+                          href="https://github.com/AnggihP/w4-my-portfolio-AnggihP"
+                        >
+                          Assignment - Deployment
+                        </a>
+                      </td>
+                      <td class="border px-2 py-2">RevoU</td>
+                      <td class="border px-2 py-2">HTML, CSS</td>
+                      <td class="border px-2 py-2">2023</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-2 py-2"
+                        ><a
+                          href="https://github.com/AnggihP/w3-landing-website-AnggihP"
+                        >
+                          My Landing Website - Man City Fanbase
+                        </a>
+                      </td>
+                      <td class="border px-2 py-2">RevoU</td>
+                      <td class="border px-2 py-2">HTML, CSS</td>
+                      <td class="border px-2 py-2">2023</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-2 py-2"
+                        ><a
+                          href="https://github.com/AnggihP/w2-my-website-design-AnggihP"
+                        >
+                          Anggih - UI UX Design
+                        </a></td
+                      >
+                      <td class="border px-2 py-2">RevoU</td>
+                      <td class="border px-2 py-2">Figma, Miro</td>
+                      <td class="border px-2 py-2">2023</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="hidden sm:block">
+              <div class="flex flex-col items-center py-3 px-4 sm:px-8">
+                <div class="container mx-auto my-3 max-w-screen-lg">
+                  <div class="flex flex-row flex-wrap-reverse">
+                    <div class="sm:basis-1/3 grow sm:pr-4">
+                      <div class="bg-gray-900 rounded-lg p-8 text-white">
+                        <h3 class="text-lg mb-4"
+                          >FAZZ Financial Group Pte. Ltd. (Singapore
+                          Company)</h3
+                        >
+                        <div class="mb-4">
+                          <h4 class="text-sm mb-4"
+                            >Customer Service English Speaker</h4
+                          >
+                          <b>Dec 2022 – March 2023</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sm:basis-1/3 grow sm:pr-4">
+                      <div class="bg-gray-900 rounded-lg p-8 text-white">
+                        <h3 class="text-lg mb-4"
+                          >PT Anugerah Cerdas Cemerlang (Cakap.com)</h3
+                        >
+                        <div class="mb-4">
+                          <h4 class="text-sm mb-4"
+                            >Customer Service English Speaker</h4
+                          >
+                          <b>Feb 2022 – Aug 2022</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sm:basis-1/3 grow sm:pr-4">
+                      <div class="bg-gray-900 rounded-lg p-8 text-white">
+                        <h3 class="text-xl mb-4"
+                          >PT Indofun Digital Teknologi</h3
+                        >
+                        <div class="mb-4">
+                          <h4 class="text-sm mb-4"
+                            >Team Leader - User Acquisition</h4
+                          >
+                          <b>June 2021 – Dec 2021</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-center py-3 px-4 sm:px-8">
+                <div class="container mx-auto my-3 max-w-screen-lg">
+                  <div class="flex flex-row flex-wrap-reverse">
+                    <div class="sm:basis-1/3 grow sm:pr-4">
+                      <div class="bg-gray-900 rounded-lg p-8 text-white">
+                        <h3 class="text-lg mb-4"
+                          >PT Bigo Information Indonesia</h3
+                        >
+                        <div class="mb-4">
+                          <h4 class="text-sm mb-4">Content Moderator</h4>
+                          <b>Aug 2020 – May 2021</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sm:basis-1/3 grow sm:pr-4">
+                      <div class="bg-gray-900 rounded-lg p-8 text-white">
+                        <h3 class="text-lg mb-4"
+                          >PT Teleperformance Indonesia</h3
+                        >
+                        <div class="mb-4">
+                          <h4 class="text-sm mb-4"
+                            >Customer Service Representative</h4
+                          >
+                          <b>Sept 2018 – Aug 2020</b>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="sm:basis-1/3 grow sm:pr-4">
+                  <div class="bg-gray-900 rounded-lg p-8 text-white">
+                    <h3 class="text-xl mb-4">PT Teleperformance Indonesia</h3>
+                    <div class="mb-4">
+                      <h4 class="text-lg mb-4"
+                        >Customer Service Representative</h4
+                      >
+                      <b class="text-sm">Sept 2018 – Aug 2020</b>
+                    </div>
+                  </div>
+                </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sm:hidden" id="m-experience">
+              <div class="flex flex-row items-center py-3 px-4 sm:px-8">
+                <div class="container mx-auto my-3 max-w-screen-lg">
+                  <div class="flex flex-row flex-wrap gap-2">
+                    <div class="sm:basis-1/5 grow sm:pr-4">
+                      <div
+                        class="bg-gray-900 rounded-lg p-8 text-white text-center"
+                      >
+                        <h3 class="text-sm mb-4"
+                          >FAZZ Financial Group Pte. Ltd.</h3
+                        >
+                        <div class="mb-4">
+                          <h4 class="text-sm mb-4"
+                            >Customer Service English Speaker</h4
+                          >
+                          <b class="text-xs">Dec 2022 – March 2023</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sm:basis-1/5 grow sm:pr-4">
+                      <div
+                        class="bg-gray-900 rounded-lg p-8 text-white text-center"
+                      >
+                        <h3 class="text-sm mb-4"
+                          >PT Anugerah Cerdas Cemerlang (Cakap.com)</h3
+                        >
+                        <div class="mb-4">
+                          <h4 class="text-sm mb-4"
+                            >Customer Service English Speaker</h4
+                          >
+                          <b class="text-xs">Feb 2022 – Aug 2022</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sm:basis-1/5 grow sm:pr-4">
+                      <div
+                        class="bg-gray-900 rounded-lg p-8 text-white text-center"
+                      >
+                        <h3 class="text-sm mb-4"
+                          >PT Indofun Digital Teknologi</h3
+                        >
+                        <div class="mb-4">
+                          <h4 class="text-sm mb-4"
+                            >Team Leader - User Acquisition</h4
+                          >
+                          <b class="text-xs">June 2021 – Dec 2021</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sm:basis-1/5 grow sm:pr-4">
+                      <div
+                        class="bg-gray-900 rounded-lg p-8 text-white text-center"
+                      >
+                        <h3 class="text-sm mb-4"
+                          >PT Bigo Information Indonesia</h3
+                        >
+                        <div class="mb-4">
+                          <h4 class="text-sm mb-4">Content Moderator</h4>
+                          <b class="text-xs">Aug 2020 – May 2021</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sm:basis-1/5 grow sm:pr-4">
+                      <div
+                        class="bg-gray-900 rounded-lg p-8 text-white text-center"
+                      >
+                        <h3 class="text-sm mb-4"
+                          >PT Teleperformance Indonesia</h3
+                        >
+                        <div class="mb-4">
+                          <h4 class="text-sm mb-4"
+                            >Customer Service Representative</h4
+                          >
+                          <b class="text-xs">Sept 2018 – Aug 2020</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </a>
+      </main>
+      <footer class="py-3 bg-gray-900 flex flex-row justify-center gap-2">
+        <svg
+          class="w-5 h-5 fill-current"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 32 32"
+          enable-background="new 0 0 32 32"
+          xml:space="preserve"
+        >
+          <circle
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            cx="16"
+            cy="16"
+            r="12"
+          />
+          <path
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-miterlimit="10"
+            d="M20.4,13.9c-0.8-1.7-2.5-2.9-4.5-2.9
+	c-2.8,0-5,2.2-5,5c0,2.8,2.2,5,5,5c2,0,3.7-1.2,4.5-2.9"
+          />
+        </svg>
+        <p class="text-center text-xs leading-relaxed text-gray-300"
+          >Anggih Portfolio
+        </p>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
