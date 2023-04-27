@@ -1,17 +1,31 @@
-# w9-library-tailwind-AnggihP
+# My Portfolio Site
 
-This is my assignment of week 9 - RevoU FSSE Madrid 2023
+This is my personal portfolio website
 
-## URL/Links
+## Links/URLs:
 
-<https://library-tailwind-anggihp.netlify.app/>
+- Portfolio Site on Netllify: <https://aangportfoliosite.netlify.app/>
 
-## Preview
+- CV: [My-Professional-CV](https://drive.google.com/file/d/1JDs8XbTT_KQADb-yTomEUh4oWn14qzTe/view?usp=share_links)
 
-### Home Page
+## My Portfolio Website Project Preview
 
-![homepage](assets/page1.jpg)
+![preview](assets/preview.jpg)
 
-### Local Page
+## My Personal and Group Project
 
-![localpage](assets/pagelocal.jpg)
+- Mockup on Figma: [W2-Project-MockUp&Prototyping-Anggih](https://www.figma.com/file/0iNUGujoGtRpP9aDt1xYca/W2-Project-MockUp%26Prototyping-Anggih)
+
+- Prototyping on Figma: [W2-Project-MockUp&Prototyping-Anggih](https://www.figma.com/proto/0iNUGujoGtRpP9aDt1xYca/W2-Project-MockUp%26Prototyping-Anggih)
+
+- My Landing Website Design [Landing-Website](http://mancity-anggih.site/)
+
+- Website: [w5gd-lamborghinicompany.anggihp.site](http://w5gd-lamborghinicompany.anggihp.site/)
+
+- Website on Netlify Deployment: [w5-groupd-lamborghini-anggihp.netlify.app](https://w5-groupd-lamborghini-anggihp.netlify.app/)
+
+- Wireframe on Miro: [W5-GroupProject-groupd-wireframe](https://miro.com/app/board/uXjVPpQ9OSU=/)
+
+- MockUp on Figma: [W5-GroupProject-groupd-MockUp&Prototyping](https://www.figma.com/file/MzVVRCsUrWzau8hmM8px8W/W5-GroupProject-groupd-MockUp%26Prototyping)
+
+- Prototyping on Figma: [W5-GroupProject-groupd-MockUp&Prototyping](https://www.figma.com/proto/MzVVRCsUrWzau8hmM8px8W/W5-GroupProject-groupd-MockUp%26Prototyping)
